@@ -1,6 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 15px;
+          text-align: left;
+        }
+        #t01 {
+          width: 100%;    
+          background-color: #f1f1c1;
+        }
+
+        input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+
+        </style>
+
 <title>Emad Alhattami</title>
 </head>
 <body>
@@ -47,12 +97,13 @@
             <h2>Microsoft Edge</h2>
             <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
           </article>
-          
-    
+        
     </section>
 
     <section>
+
         <h2>Services</h2>
+
         <article>
             <h2>Build a super website</h2>
             <p>the pest web site</p>
@@ -72,9 +123,103 @@
             Learn more
         </article>
 
-        <article></article>
+    </section>
 
-        <article></article>
+    <section>
+        <h2>Testimonies</h2>
+        
+        <article>
+            <h1>Samsuing</h1>
+
+       <figure>
+       <img src="images/samsuing.webp" alt="Trulli" style="width:100%">
+       <figcaption>Samsuing</figcaption>
+      </figure>
+        </article>
+
+        <article>
+            <h1>Iphone</h1>
+       <figure>
+       <img src="images/iphone.jpg" alt="Trulli" style="width:100%">
+       <figcaption>iphone</figcaption>
+      </figure>
+        </article>
+
+        <article>
+            <h1>Huawei</h1>
+
+       <figure>
+       <img src="images/huawei.webp" alt="Trulli" style="width:100%">
+       <figcaption>huawei</figcaption>
+      </figure>
+        </article>
+    </section>
+
+
+    <section>
+       <h2>Meet our team</h2>
+       
+      
+      <table id="t01">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>job</th>
+        </tr>
+        <tr>
+          <td>Ahmed</td>
+          <td>ali</td>
+          <td>developer</td>
+        </tr>
+        <tr>
+          <td>sleem</td>
+          <td>ali</td>
+          <td>developer</td>
+        </tr>
+        <tr>
+          <td>Fatma</td>
+          <td>ahmed</td>
+          <td>developer</td>
+        </tr>
+      </table>
+    </section>
+
+
+    <section>
+        <h2>Contact us</h2>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <form>
+       
+        <input type="radio" id="job" name="job" value="job">
+        <label for="job">job</label><br>
+        <input type="radio" id="services" name="services" value="services">
+        <label for="services">services</label><br>
+       
+    <input type="submit" value="Submit">
+
+    <div id=“footer”><a href="https://www.facebook.com/EmadTech1"> facebook</a></div>
+  </form>
+</div>
+
+        
     </section>
 
 
